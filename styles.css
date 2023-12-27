@@ -1,0 +1,50 @@
+.hero-image{ /*home page hero image class*/
+    display: flex; /*defines a flex container*/
+    flex-direction: column; /*content displays in a column, taking up full width*/
+    flex-wrap: nowrap; /*forces content onto one line instead of spilling over*/
+}
+
+.table-style{ /*home page table class*/
+    display: flex;
+    justify-content: center; /*centers content in the flex container*/
+    font-family:var(--main-text-font); /*taken from root in global css*/
+}
+
+table, th, td { /*styling inside the table using element selectors*/
+    border: 1px solid;
+    border-collapse: collapse; /*prevents double borders around each cell*/
+    padding: 15px;
+    text-align: left;
+    color:var(--main-text-color);
+  }
+
+.form-style{ /*home page form class*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(195, 221, 221); /*gives the form background a color to break up the page*/
+    font-family:var(--main-text-font); /*taken from root in global css*/
+    padding: 20px 0px 40px;
+    margin-top: 40px;
+    color:--main-text-color;
+}
+
+input[type=text] { /*styling text fields*/
+    width: 100%; /*takes up entire width of the flex container*/
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; /*tells the browser to account for any border/padding
+    in values you specify for the width/height. Won't add to total width/height.*/
+    border: none;
+    border-radius: 8px; /*rounds out the button corners*/
+  }
+
+input[type=submit]{ /*styling submission button*/
+    background-color: #008fb8;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 35px;
+    margin-top: 16px;
+    cursor: pointer; /*sets the cursor to show when the mouse pointer is over clickable button*/
+}

@@ -1,0 +1,59 @@
+/*Reset automatic browser styling that adds margin, padding, or border*/
+body{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/* variables defined in root pseudo-class*/
+:root {
+    --main-text-color: #404040;
+    --main-text-font: Arial, Helvetica, sans-serif; /*defines a specific font and some backup options*/
+  }
+
+.main-page-content{
+    color:var(--main-text-color); /*taken from root*/
+    font-family:var(--main-text-font); /*taken from root*/
+    display: flex; /*defines a flex container (grid system)*/
+    flex-direction: column; /*Stacks content in a column*/
+    align-items: center;
+    margin: 40px 20px 0px;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    height:150px;   
+    Margin: 20px;
+}
+
+.navbar-ul { /*styling navbar unordered list*/
+    list-style-type: none; /*removes bullet points*/
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden; /*prevents navbar from extending the page out horizontally*/
+    background-color:  rgb(195, 221, 221);
+}
+  
+.navbar-li {
+    float: left; /*left aligns navbar items*/
+}
+
+li a {
+    display: block; /*takes up full width of the page*/
+    color:var(--main-text-color);
+    font-family:var(--main-text-font);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*Removes underline from links*/
+  }
+
+/*changes color of the link of the page you are currently on*/
+.active{
+    color:#008fb8;
+}
+
+/*All h1's with id site-header are blue*/
+#site-header{
+    color:#008fb8;
+}

@@ -1,0 +1,103 @@
+<!--Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors..-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home Page</title>
+    <!--Here we link the css file in so styling can be applied to our html page-->
+    <link rel="stylesheet" href= "styles.css">
+    <link rel="stylesheet" href= "global.css">
+  </head>
+
+
+  <body>
+    <!--My site Logo that links to the homepage-->
+    <div class="logo">
+        <a href="index.html">
+            <img src="Adventure Blog Logo.png"/>
+        </a>
+    </div>
+
+    <!--navbar is an unordered list, the link for the current page
+    is given an "active" class to be styled for differentiation-->
+        <ul class="navbar-ul">
+            <li class="navbar-li"><a class="active" href="index.html">Home</a></li>
+            <li class="navbar-li"><a href="Chicago-Electric-Forest-Trip.html">Chicago & Electric Forest Festival</a></li>
+            <li class="navbar-li"><a href="NYC-Philadelphia-Trip.html">Philadelphia & New York City</a></li>
+        </ul>
+
+    <div class="hero-image">
+        <img src="Chicago/Chicago-City-Skyline.jpg";"/>
+    </div>
+
+    <div class="main-page-content">
+    <h1 id= "site-header">Welcome to my Little Adventure Blog</h1>
+    <h3>A Glimpse of My Year</h3>
+    </div>
+
+    <!--A table of cities I've visited this year-->
+    <div class="table-style">
+    <table>
+        <tr>
+            <th>Cities I've Visited This Year</th>
+            <th>Month</th>
+            <th>My Rating</th>
+        </tr>
+        <tr>
+            <td>Detroit, Michigan</td>
+            <td>May</td>
+            <td>7/10</td>
+        </tr>
+        <tr>
+            <td>Chicago, Illinois</td>
+            <td>June</td>
+            <td>10/10</td>
+        </tr>
+        <tr>
+            <td>Rothbury, Michigan</td>
+            <td>June</td>
+            <td>10/10</td>
+        </tr>
+        <tr>
+            <td>Denver, Colorado</td>
+            <td>August</td>
+            <td>6/10</td>
+        </tr>
+        <tr>
+            <td>Philadelphia, Pennsylvania</td>
+            <td>September</td>
+            <td>6/10</td>
+        </tr> 
+        <tr>
+            <td>New York City, New York</td>
+            <td>September</td>
+            <td>9/10</td>
+        </tr>      
+    </table>
+    </div>
+
+    <!--This is a form where you can input your name and whether or not you
+        have visited one of the cities I have!-->
+    <!--This input information is not stored anywhere since we are only
+        using HTML-->
+    <div class="form-style">
+    <h3>Fill out My Form!</h3><br>
+    <form>
+        <!--Radio buttons allow only one answer to be picked-->
+        <input type="text" name="firstName" placeholder="First Name"> <br>
+        <input type="text" name="lastName" Placeholder="Last Name"> <br><br>
+        Have you visited any of these cities? <br>
+        <input type="radio" name="visited" value="Yes"> Yes <br>
+        <input type="radio" name="visited" value="No"> No <br>
+        <input type="radio" name="visited" value="None-Business"> That's None of your Business! <br>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.flex-container{ /*image gallery styles*/
+    display: flex;
+    justify-content: center; 
+    /*flex-wrap breaks images into multiple lines instead of forcing onto one*/
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+img {
+    /*prevents images from stretching as they stack into a column format*/
+    align-self: center;
+  }
+
+/*Media Query breakpoint - when viewport is 800px and smaller,
+images are stacked into a column format*/
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+.list-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:var(--main-text-font);
+    color:var(--main-text-color);
+    background-color: rgb(195, 221, 221); /*gives the form background a color to break up the page*/
+    padding: 20px 0px 40px;
+}

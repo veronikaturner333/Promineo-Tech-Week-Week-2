@@ -1,0 +1,51 @@
+<!--A blog article page-->
+<!DOCTYPE html><!--This is a comment!-->
+<!--This attribute is used to identify the document language (which is in our case English)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia and New York City</title>
+    <!--Here we link the css file in so styling can be applied to our html page-->
+    <link rel="stylesheet" href= "Blog-Pages.css">
+    <link rel="stylesheet" href= "global.css">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html">
+        <img src="Adventure Blog Logo.png"/>
+        </a>
+    </div>
+    <!--Here are the navigation links that will take you from one page on the site to the next-->
+    <ul class="navbar-ul">
+        <li class="navbar-li"><a href="index.html">Home</a></li>
+        <li class="navbar-li"><a class="active" href="Chicago-Electric-Forest-Trip.html">Chicago & Electric Forest Festival</a></li>
+        <li class="navbar-li"><a href="NYC-Philadelphia-Trip.html">Philadelphia & New York City</a></li>
+    </ul>
+
+    <div class="main-page-content">
+    <h1 id= "site-header">My Trip to Chicago and Electric Forest</h1>
+    <h3>June 2023</h3>
+    <p>I visited a few friends in Chicago in June, then drove up to Rothbury, MI for Electric Forest music festival. Here are some photos!</p>
+    </div>
+
+    <!--Image gallery which will be styled using flexbox-->
+    <div class="flex-container">
+        <img src="Chicago/Breakfast-in-Chicago.jpg"/>
+        <img src="Chicago/Yayoi-Kusama-Dots-Obsession.jpg"/>
+        <img src="Chicago/Electric-Forest.jpg"/>
+    </div>
+
+    <!--An ordered bulleted list-->
+    <div class= "list-style">
+        <h3>Favorite Things I did in Chicago and Electric Forest</h3>
+        <ol>
+            <li>Saw Yoyoi Kusama's art at a museum</li>
+            <li>Had delicous deep-dish pizza</li>
+            <li>Saw some unforgettable music sets at Electric Forest</li>
+            <li>Made new friends camping</li>
+        </ol>
+    </div>
+</body>
+</html>
